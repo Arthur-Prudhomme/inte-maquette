@@ -23,6 +23,7 @@ body{
     height: 10vh;
     width: 100vw;
     background-color: blue;
+    display: flex;
 }
 
 .global-content{
@@ -38,16 +39,19 @@ body{
     background-color: red;
 }
 
-.dashboard{
+.dashboard, .infos-dashboard{
     width: 20%;
+}
+
+.dashboard{
     padding: 20px;
 }
 
-.content{
+.content, .infos-content{
     width: 50%;
 }
 
-.feed{
+.feed, .infos-feed{
     width: 30%;
 }
 
@@ -88,6 +92,7 @@ body{
     h2{
         color: #000000;
     }
+    margin-bottom: 50px;
 }
 
 .dashboard-icons{

@@ -36,7 +36,7 @@ body{
 
 .dashboard, .content, .feed{
     height: 100%;
-    background-color: red;
+    background-color: rgb(58, 55, 55);
 }
 
 .dashboard, .infos-dashboard{
@@ -84,7 +84,7 @@ body{
     border-radius: 17px;
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 75%;
     align-items: center;
     padding: 10px;
     justify-content: center;
@@ -98,4 +98,15 @@ body{
 .dashboard-icons{
     width: 30px;
     height: 30px;
+}
+
+.feed-icons{
+    width: 55px;
+    height: 55px;
+}
+
+.feed-cards{
+    display: flex;
+    flex-direction: row;
+    
 }

@@ -134,4 +134,14 @@ body {
   justify-content: center;
 }
 
+.graph {
+  width: 100%;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=builds.css.map */

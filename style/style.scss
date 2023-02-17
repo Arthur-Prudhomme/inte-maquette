@@ -18,7 +18,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -32,6 +31,9 @@
 }
 .higher-subtext{
     color: var(--higher-subtext);
+}
+.lower-subtext{
+    color: var(--lower-subtext);
 }
 
 .yellow{
@@ -54,12 +56,12 @@ body{
     background-color: var(--background);
     height: 100vh;
     width: 100vw;
+    font-size: 20px;
 }
 
 .infos{
     height: 10vh;
     width: 100vw;
-    background-color: blue;
     display: flex;
     align-items: center;
 }
@@ -74,7 +76,6 @@ body{
 
 .dashboard, .content, .feed{
     height: 100%;
-    background-color: rgb(58, 55, 55);
 }
 
 .dashboard, .infos-dashboard-container{
@@ -107,6 +108,7 @@ body{
     gap: 15px;
     width: 60%;
     align-items: center;
+    font-size: 1rem;
 }
 
 .dashboard{
@@ -127,10 +129,10 @@ body{
     align-items: center;
     padding: 10px;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     h2{
         color: #000000;
-        font-size: 24px;
+        font-size: 1.2rem;
     }
     margin-bottom: 50px;
 }
@@ -140,14 +142,45 @@ body{
     height: 30px;
 }
 
+.feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .feed-icons{
     width: 55px;
     height: 55px;
 }
 
-.feed-cards{
+.feed-cards, .feed-cards-content{
     display: flex;
     flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.feed-recent-transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.feed-recent-transaction-title, .feed-asset-title{
+    h2{
+        padding: 0.4rem 0 0 1.5rem;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+}
+
+.feed-cards{
+    padding: 0 8% 0 8%;
+    img{
+        height: 3.5rem;
+    }
 }
 
 .infos-feed-content, .infos-content-content{
@@ -157,7 +190,7 @@ body{
     padding: 0 30px 0 30px;
     align-items: center;
     h1{
-        font-size: 32px;
+        font-size: 1.4rem;
         color: var(--text);
     }
     input{
@@ -174,7 +207,7 @@ body{
 }
 
 .graph{
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
@@ -195,31 +228,33 @@ body{
     display: flex;
     flex-direction: row;
     background-color: var(--background-tile);
-    height: 60px;
-    width: 430px;
+    height: 50%;
+    width: 40%;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px 0 30px;
+    padding: 0 1rem 0 1rem;
     border-radius: 15px;
     color: var(--text);
-    margin-right: 130px;
+    margin-right: 15%;
+    font-size: 0.8rem;
 }
 
 .selected{
     background-color: var(--background-tile-selected);
-    padding: 8px;
+    padding: 2%;
     border-radius: 15px;
 }
 
 .total-balance-titles{
+    margin-left: 4%;
     h2{
         color: var(--text);
         font-weight: bold;
-        font-size: 26px;
+        font-size: 1.2rem;
     }
     h3{
         color: var(--subtext);
-        font-size: 18px;
+        font-size: 0.8rem;
     }
 }
 
@@ -232,7 +267,7 @@ body{
         background-color: var(--yellow);
         padding: 0 5px 0 5px;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 0.75rem;
         font-weight: bold;
     }
 }
@@ -244,12 +279,12 @@ body{
     h2{
         color: var(--text);
         font-weight: bold;
-        font-size: 18px;
+        font-size: 0.95rem;
     }
     h3{
         color: var(--lower-subtext);
         font-weight: bold;
-        font-size: 18px;
+        font-size: 0.95rem;
     }
     margin-bottom: 20px;
 }
@@ -267,19 +302,19 @@ body{
     justify-content: space-between;
     margin: 0 30px 0 30px;
     border-radius: 15px;
-    font-size: 13px;
+    font-size: 0.6rem;
     img{
-        height: 40px;
+        height: 2rem;
     }
 }
 
 .recent-transactions-content{
     background-color: var(--background-tile-trp);
-    padding: 10px 30px 10px 30px;
+    padding: 0.5rem 30px 0.5rem 30px;
 }
 
 .waves{
-    width: 140px;
+    width: 7rem;
 }
 
 .trade{
@@ -287,4 +322,41 @@ body{
     border-radius: 50px;
     color: var(--text);
     padding: 5px 10px 5px 10px;
+    font-size: 0.75rem;
+}
+
+div[class^=assets-card]{
+    width: 85%;
+    height: 45%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    justify-content: space-between;
+    
+    img{
+        width: 3rem;
+    }
+    p{
+        font-size: 0.95rem;
+    }
+    h2{
+        font-size: 1.3;
+        font-weight: bold;
+        align-self: end;
+    }
+}
+
+.assets-card-1{
+    background: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+}
+.assets-card-2{
+    background: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+}
+
+.assets{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

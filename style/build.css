@@ -398,7 +398,7 @@ div[class^=assets-card] h2 {
     gap: 2rem;
   }
   .dashboard {
-    justify-content: center;
+    justify-content: start;
     gap: 2rem;
     height: 100vh;
   }

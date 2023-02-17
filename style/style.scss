@@ -429,6 +429,10 @@ div[class^=assets-card]{
 }
 
 @media screen and (max-width : 670px){
+    *{
+        font-size: 10px;
+    }
+
     .total-balance-buttons{
         display: none;
     }

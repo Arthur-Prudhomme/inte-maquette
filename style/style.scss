@@ -1,7 +1,17 @@
 :root {
     --background: #000000;
+    --higher-subtext: #fffffff2;
+    --lower-subtext: #ffffffb3;
     --subtext: #ffffffcc;
     --text: #FFFFFF;
+    --background-tile: #292727;
+    --background-tile-trp: #20232BB2;
+    --background-tile-selected: #0D0C0C;
+    --yellow: #FAFF00;
+    --green: #4AD619;
+    --red: #D61919;
+    --purple: #6C1182;
+    --blue: #1970D6;
 }
 
 *{
@@ -11,6 +21,33 @@
     font-size: 100%;
     font: inherit;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    color: var(--text);
+}
+.subtext{
+    color: var(--subtext);
+}
+.higher-subtext{
+    color: var(--higher-subtext);
+}
+
+.yellow{
+    color: var(--yellow);
+}
+.green{
+    color: var(--green);
+}
+.red{
+    color: var(--red);
+}
+.purple{
+    color: var(--purple);
+}
+.blue{
+    color: var(--blue);
 }
 
 body{
@@ -69,6 +106,7 @@ body{
     flex-direction: row;
     gap: 15px;
     width: 60%;
+    align-items: center;
 }
 
 .dashboard{
@@ -120,6 +158,7 @@ body{
     align-items: center;
     h1{
         font-size: 32px;
+        color: var(--text);
     }
     input{
         width: 470px;
@@ -141,5 +180,111 @@ body{
 
 .content{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.total-balance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-balance-buttons{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-tile);
+    height: 60px;
+    width: 430px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+    border-radius: 15px;
+    color: var(--text);
+    margin-right: 130px;
+}
+
+.selected{
+    background-color: var(--background-tile-selected);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.total-balance-titles{
+    h2{
+        color: var(--text);
+        font-weight: bold;
+        font-size: 26px;
+    }
+    h3{
+        color: var(--subtext);
+        font-size: 18px;
+    }
+}
+
+.total-balance-title-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    p{
+        background-color: var(--yellow);
+        padding: 0 5px 0 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.recent-transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h2{
+        color: var(--text);
+        font-weight: bold;
+        font-size: 18px;
+    }
+    h3{
+        color: var(--lower-subtext);
+        font-weight: bold;
+        font-size: 18px;
+    }
+    margin-bottom: 20px;
+}
+
+.recent-transactions-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recent-transactions-content, .recent-transactions-titles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    img{
+        height: 40px;
+    }
+}
+
+.recent-transactions-content{
+    background-color: var(--background-tile-trp);
+    padding: 10px 30px 10px 30px;
+}
+
+.waves{
+    width: 140px;
+}
+
+.trade{
+    background-color: var(--background-tile-selected);
+    border-radius: 50px;
+    color: var(--text);
+    padding: 5px 10px 5px 10px;
 }

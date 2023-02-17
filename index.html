@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/builds.css">
+    <link rel="stylesheet" href="style/build.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Poppins&display=swap" rel="stylesheet"> 
     <title>Inte-maquette</title>
 </head>
 <body>
@@ -67,31 +70,72 @@
                 <div class="tabs-container">
                     <div class="log-out tabs">
                         <img src="imgs/dashboard-icons/logout.svg" alt="" class="dashboard-icons" id="">
-                        <h2>Dashboard</h2>
+                        <h2>Logout</h2>
                     </div>
                 </div>
             </div>
 
             <div class="content">
                 <div class="total-balance">
-                    <div>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                    <div class="total-balance-titles">
+                        <h3>Total Balance</h3>
+                        <div class="total-balance-title-main">
+                            <h2>0.97894652</h2>
+                            <p>BTC</p>
+                        </div>
+                        <h3>$40,123.56</h3>
                     </div>
-                    <div>
-                        <button class="" id=""></button>
-                        <button class="" id=""></button>
-                        <button class="" id=""></button>
-                        <button class="" id=""></button>
+                    <div class="total-balance-buttons">
+                        <div class="total-balance-button selected">Portfolio</div>
+                        <div class="total-balance-button">Funding</div>
+                        <div class="total-balance-button">Assests</div>
+                        <div class="total-balance-button">P2P</div>
                     </div>
                 </div>
 
                 <img src="imgs/Graph.svg" alt="" class="graph" id="">
 
-                <div class="content-recent-transaction">
-                    <div class="" id=""></div>
-                    <div class="" id=""></div>
+                <div class="recent-transactions">
+                    <div class="recent-transactions-titles" id="">
+                        <h2>Recent Transactions</h2>
+                        <h3>See all coins</h3>
+                    </div>
+                    <div class="recent-transactions-container">
+                        <div class="recent-transactions-content">
+                            <img src="imgs/crypto-currencies-icons/Bitcoin.svg" alt="">
+                            <div>
+                                <p class="higher-subtext">Bitcoin</p>
+                                <p class="subtext">BTC</p>
+                            </div>
+                            <div>
+                                <p class="higher-subtext">Market Cap</p>
+                                <p class="blue">$40,243.70</p>
+                            </div>
+                            <div>
+                                <p class="higher-subtext">24h change</p>
+                                <p class="green">+1,56</p>
+                            </div>
+                            <img src="imgs/wave-1.svg" class="dashboard-icons waves" alt="">
+                            <div class="trade">Trade</div>
+                        </div>
+                        <div class="recent-transactions-content">
+                            <img src="imgs/crypto-currencies-icons/Etherium icon.svg" alt="">
+                            <div>   
+                                <p class="higher-subtext">Etherum</p>
+                                <p class="subtext">ETH</p>
+                            </div>
+                            <div>
+                                <p class="higher-subtext">Market Cap</p>
+                                <p class="purple">$40,243.70</p>
+                            </div>
+                            <div>
+                                <p class="higher-subtext">24h change</p>
+                                <p class="red">+1,56</p>
+                            </div>
+                            <img src="imgs/wave-2.svg" class="dashboard-icons waves" alt="">
+                            <div class="trade">Trade</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

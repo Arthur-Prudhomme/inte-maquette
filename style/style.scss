@@ -448,4 +448,8 @@ div[class^=assets-card]{
         width: 1rem;
         height: 1rem;
     }
+    .recent-transactions-content, .recent-transactions-titles{
+        margin: 0;
+        padding: 0.5rem 0 0.5rem 0;
+    }
 }

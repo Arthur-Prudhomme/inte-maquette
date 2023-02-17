@@ -376,7 +376,11 @@ div[class^=assets-card] h2 {
     overflow-x: hidden;
   }
   .content, .infos-content-container, .feed, .infos-feed-container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+  }
+  .content {
+    margin-bottom: 9%;
   }
   .content-feed-container {
     flex-direction: column;

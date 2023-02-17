@@ -87,11 +87,16 @@ body{
 }
 
 .content, .infos-content-container{
-    width: 50%;
+    width: 60%;
 }
 
 .feed, .infos-feed-container{
-    width: 30%;
+    width: 40%;
+}
+
+.content-feed-container{
+    display: flex;
+    flex-direction: row;
 }
 
 .tabs-container, .dashboard-title-container{
@@ -99,7 +104,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 .tabs{
@@ -360,3 +365,112 @@ div[class^=assets-card]{
     flex-direction: column;
     gap: 0.5rem;
 }
+
+@media screen and (max-width : 1300px){
+    body{
+        overflow-x: hidden;
+    }
+    .content, .infos-content-container, .feed, .infos-feed-container{
+        width: 100%;
+    }
+    .content-feed-container{
+        flex-direction: column;
+        width: 92%;
+        margin-left: 8%;
+    }
+    .dashboard{
+        width: 8%;
+        position:fixed;
+    }
+    .dashboard-title{
+        display: none;
+    }
+
+    .tabs-container{
+        gap: 2rem;
+    }
+
+    .dashboard{
+        justify-content:center;
+        gap: 2rem;
+        height: 100vh;
+    }
+
+    .tabs{
+        width: 100%;
+        h2{
+            display: none;
+        }
+        img{
+        }
+    }
+    .infos-dashboard-container img, .infos-content-content h1{
+        display: none;
+    }
+    .infos-feed-content{
+        justify-content: right;
+        gap: 2rem;
+    }
+    .infos-feed-content, .infos-content-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+        align-items: center;
+        h1{
+            font-size: 1.4rem;
+            color: var(--text);
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            border-radius: 15px;
+            padding: 0 30px 0 30px;
+        }
+    }
+
+    .dashboard-icons{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// @media screen and (max-width : 1325px){
+//     .feed-cards{
+//         p{
+//             display: none;
+//         }
+//     }
+//     .feed-cards, .feed-cards-content{
+//         justify-content: right;
+//         gap: 0;
+//     }
+
+//     div[class^=assets-card]{
+//         display: none;
+//     }
+//     .feed-recent-transaction-title, .feed-asset-title{
+//         display: none;
+//     }
+//     .feed-recent-transaction{
+//         height: 100%;
+//         justify-content: center;
+//         gap: 3rem;
+//     }
+
+//     .dashboard, .infos-dashboard-container{
+//         width: 20%;
+//     }
+    
+//     .dashboard{
+//         padding: 20px;
+//     }
+    
+//     .content, .infos-content-container{
+//         width: 70%;
+//     }
+    
+//     .feed, .infos-feed-container{
+//         width: 10%;
+//     }
+// }
